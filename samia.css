@@ -1,0 +1,1120 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html,body{
+	height:100%;
+}
+.section-padding{
+	padding:100px 0;
+}
+.content-top-space{
+	margin-top:55px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i');
+font-family: 'Raleway', sans-serif;
+*{
+	padding:0;
+	margin:0;
+}
+/*--===--strat menu--======--*/
+.mainnav{
+	width:100%;
+	background:rgba(0,0,0,.2);
+	position:absolute;
+	z-index:99;
+}
+/*.menu-bg{
+	background:red;
+}*/
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-right {
+    margin-top: 20px;
+}
+.logo img {
+	border-radius:50%;
+    width: 50px;
+    height: 50px;
+    padding:0px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color:#ffff;
+}
+.menu-bg{
+	background:red;
+}
+/*--===--end menu--======--*/
+
+/*--===--strat slider--======--*/
+.slider{
+	position:relative;
+    background: url(../images/bgb.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+	height:100%;
+	z-index:1;
+}
+.slider::after{
+	position:absolute;
+	content:"";
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:#000;
+	opacity:.2;
+	z-index:-1;
+}
+
+.item{
+	color:#fff;
+	margin-top:150px;
+}
+.item h1{
+	margin-bottom:50px;
+	color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 700;
+}
+.item h1 span{
+	color:#fe320a;
+    font-size: 60px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 700;
+}
+.item p{
+	margin-bottom:50px;
+	color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+.item a {
+	display:inline-block;
+    padding:4px 15px;
+    background: #fe320a;
+    text-decoration: none;
+	color: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+/*--===--strat slider--======--*/
+
+/*--===--strat about--======--*/
+.about{
+	background:#f6f6f6;
+}
+
+.about h1{
+	color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+.about h1 span{
+	color: #ff0000;
+    font-size: 30px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+.about-top h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-48%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.about-top h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+/*--===--end about--======--*/
+
+/*--===--strat about left--======--*/
+.about-left img{
+	width:100%;
+	margin-top:60px;
+	height:auto;
+}
+.about-left{
+	position:relative;
+}
+.about-left {
+	
+}
+.about-left h2{
+	position:absolute;
+	background:rgba(0,0,0,.6);
+}
+.about-right h1{
+	text-align:justify;
+	margin-top:60px;
+	margin-bottom:50px;
+	font-size:26px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+.about-right p{
+	text-align:justify;
+	font-size: 14px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+	margin-bottom:47px;
+}
+.button {
+    margin-top: -37px;
+    float: left;
+    background: red;
+    display: inline-block;
+    padding: 6px 18px;
+    color: #fff;
+}
+
+.about-left h2 {
+    position: absolute;
+    top: 340px;
+    color: #fff;
+    left: 86px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+ul.nab {
+	display: inline-block;
+    position: absolute;
+    top: 374px;
+    left: 60px;
+    color: #fff;
+	background:rgba(0,0,0,.6);
+	max-width:500px;
+}
+
+ul.nab li {
+    display: inline-block;
+    background: #000;
+	color:#fff;
+    border-radius: 50px;
+    width: 40px;
+    line-height: 42px;
+    height: 40px;
+}
+ul.nab li:hover {
+	background: #fff;
+	color:#000;
+}
+/*--===--end about left--======--*/
+
+/*--===--start here video--===--*/
+.video{
+	background: url(../images/video.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+	height:100%;
+}
+.video-text h1 {
+    color: red;
+    margin-top: 156px;
+}
+.video-icon i {
+    display: inline-block;
+    font-size: 30px;
+    background: red;
+    width: 70px;
+    height: 95;
+    height: 41px;
+    color: #000;
+    line-height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+/*--===--end here video--===--*/
+
+/*--======--start here services--======--*/
+
+.services{
+	background:#ffffff
+}
+.services-top h1 {
+	color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+.services-top h1 span{
+	color: #ff0000;
+    font-size: 30px;
+    text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+.services-top h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-44%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.services-top h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+.top-icon{
+	margin-top:50px;
+}
+.top-icon i{
+	font-size:48px;
+	color:red;
+	margin-bottom:30px;
+}
+.top-icon h2{
+	font-size:24px;
+	margin-bottom:20px;
+	text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 500;
+}
+.top-icon p{
+	font-size:14px;
+	//margin-bottom:20px;
+	text-transform: uppercase;
+	font-family:'Raleway', sans-serif;
+    font-weight: 400;
+}
+/*--====--end here services--===--*/
+/*--====--start counterup--===--*/
+.counterup{
+	background: url(../images/b1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.counter-box i {
+    font-size: 22px;
+    color: red;
+    border: 2px solid red;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 55px;
+    margin-bottom: 14px;
+}	
+span.counter-number {
+    font-size: 30px;
+    color:red;
+}	
+p.counter-name {
+    color: red;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: initial;
+    font-weight: 600;
+}
+/*--====--end counterup--===--*/
+
+/*--====--start portfoli--===--*/
+.portfolio-menu {
+    margin-bottom: 55px;
+}
+
+.portfoli-top h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.portfolio-top h1 span{
+	color:red;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.portfolio-top h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-48%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.portfolio-top h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 600;
+    margin-top: 37px;
+}
+button.mixitup-control-active {
+    color: red;
+}
+.portfolio-item{
+	position:relative;
+	margin-bottom:40px;
+	transition:.3s;
+}
+.portfolio-item-hover{
+	text-decoration:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+	z-index:1;
+	color:#fff;
+    left: 0;
+	background:#ff000087;
+	opacity:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+	visibility:hidden;
+}
+.portfolio-item:hover .portfolio-item-hover {
+	visibility:visible;
+	opacity:1;
+}
+.portfolio-item-hover i{
+	color:#fff;
+	cursor:pointer;
+}
+.portfolio-item img{
+	width:100%;
+}
+/*--====--end portfoli--===--*/
+
+/*--====--start skillbar script.net--===--*/
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*--==--end skillbar script.net--==--*/
+
+/*--==--start skillbar custom css--==--*/
+.skill{
+	background: #c0ce7d54;
+}
+.skillbar {
+    margin-top: 46px;
+    margin-left: -48px;
+}
+span.skill-bar-percent {
+    padding: 0px 0px;
+}
+span.skillbar-title {
+    border-radius: 20px;
+    margin-left: 40px;
+}
+p.skillbar-bar {
+    border-radius: 10px;
+}
+.skillbar {
+    background: transparent;
+}
+span.skill-bar-percent {
+    color: #000;
+    font-size: 21px;
+}
+.skill-top h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.skill-top h1 span{
+	color:red;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+.skill-top h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-48%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.skill-top h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+
+/*--==--end skillbar custom css--==--*/
+
+
+/*--===--strat here team--===--*/
+
+.team {
+    padding: 60px 0;
+    background: #e1e1e1;
+}
+.team-item {
+    position: relative;
+    margin-top: 55px;
+}
+.team-item:hover .team-item-hover::after{
+	visibility:visible;
+	opacity:.44;
+}
+.team-item-hover{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+	
+}
+.team-item-hover::after{
+	content:"";
+	background:red;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:.0;
+	z-index:-1;
+	visibility:hidden;
+	transition:.3s;
+}
+.team-hover-content {
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    bottom: -61px;
+    transition: .3s;
+}
+.team-item:hover .team-hover-content{
+	   bottom:0;
+}
+
+.team-hover-content ul{
+	list-style:none;
+}
+ .team-name{
+	 text-transform:uppercase;
+	 text-align: center;
+}
+.team-hover-content ul li{
+	display:inline;
+}
+.team-hover-content ul li a{
+	color:#fff;
+	font-size:18px;
+	margin:0 -3px;
+}
+
+.team-hover-content h4 {
+    margin-top: 11px;
+    font-size: 20px;
+    margin-left: -5px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.team-hover-content ul li {
+    padding: 6px;
+}
+.about-top {
+    font-size: 30px;
+    text-transforn: uppercase;
+    font-weight: 300px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.team-hover-content ul {
+    padding: 9px;
+}
+
+
+.about-top1 h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.about-top1 h1 span{
+	color:red;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.about-top1 h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-20%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.about-top1 h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+
+/*--===--end here team--===--*/
+
+/*--===--start here testimonial--===--*/
+
+
+/*--===--strat here testimonial--===--*/
+.testimonial{
+	position:relative;
+	z-index:1;
+	padding:50px 0;
+	background: url(../images/images/1385663768972-1385494950565.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	//background-attachment:fixed;
+	color:#fff;
+}
+.testimonial::after{
+	content:"";
+	background:#000000;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity:.44;
+	z-index:-1;
+	transition:.3s;
+}
+
+.item img {
+    margin-top: 90px;
+}
+
+.owl-carousel-testimonial img{
+	border-radius:50%;
+	width:auto !important;
+	margin:0 auto;
+}
+.testimonial h5{
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+	//color:#000;
+}
+.testimonial p {
+    line-height: 29px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+.item-content p {
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+/*--===--end here testimonial--===--*/
+
+/*--===--start princing table--===--*/
+.princing-table{
+	color:#fff;
+	background:#dee8de;
+}
+
+.princing-head h1{
+	color:#000;
+	margin-bottom:30px;
+	font-size:34px;
+	text-transform:uppercase;
+    font-family: initial;
+    font-weight: 600;
+}	
+.princing-head p{
+	color:#000;
+	font-size:14px;
+	text-transform:uppercase;
+    font-family: initial;
+    font-weight: 600;
+}	
+.princing-head h1::after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background: red;
+    top: 46px;
+    left: 50;
+    left: 50%;
+    margin-left: -35px;
+}
+.princing-head h1 span{
+	color:red;
+}
+.princing-head h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: red;
+    top: 38px;
+    left: 50;
+    left: 50%;
+    margin-left: -10px;
+    border-radius: 50px;
+}
+.princing {
+    background: #dcbacd;
+    padding: 40px 0;
+    margin-top: 50px;
+    border-radius: 0px 0px 150px 150px;
+	transition:.3s;
+}
+.princing:hover{
+	border-radius:0;
+}
+
+.princing:hover {
+    background:red;
+	color:#000;
+}
+.princing-top p:hover {
+    background: #fff;
+    color: red;
+}
+.princing a:hover {
+    background: #000;
+    text-decoration: none;
+}
+.princing a {
+    background: red;
+    padding: 6px 26px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 700;
+    color: #fff;
+}
+.princing-top p {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.princing-top{
+	position:relative;
+}
+.princing-top span {
+	color:red;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 300;
+    position: absolute;
+    top: 56px;
+    left: 71px;
+}
+.princing-top span {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 300;
+    left:69px;
+}
+.nav {
+    margin-bottom: 30px;
+}
+
+.nav li {
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 400;
+    line-height: 35px;
+}
+.princing-top p {
+    border: 3px solid #fff;
+    width: 130px;
+    height: 130px;
+    //display: inline-block;
+    border-radius: 100%;
+    line-height: 91px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.princing-head h1::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: red;
+    top: 48px;
+    left: 50;
+    left: 50%;
+    margin-left: -50px;
+}
+.princing-top em{
+	font-size:25px;
+}
+/*--===--end here princing--===--*/
+
+/*--===--strat here contact--======--*/
+.contact{
+	margin-top:50px;
+	background: url(../images/AADJVIS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.contact h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.contact h1 span{
+	color:red;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: initial;
+    font-weight: 800;
+}
+
+.contact h1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom:-20%;
+    left: 50%;
+    background: red;
+    border-radius: 50px;
+    margin-left: -10px;
+}
+.contact h1::after{
+    position: absolute;
+    content: "";
+    width:100px;
+    height:1px;	
+    bottom:-6px;
+    left:50%;
+    background:red;
+    margin-left:-50px;
+}
+
+textarea.form-control{
+    background: transparent;
+}
+textarea.form-control:focus {
+    background: transparent;
+}
+input.form-control{
+    background: transparent;
+}
+input.form-control:focus {
+    background: transparent;
+}
+input.form-control {
+    background: transparent;
+    margin-bottom: 30px;
+}
+input.form-control::placeholder{
+	color:#fff;
+}
+textarea.form-control {
+    color: #fff;
+}
+a.btn.btn-default {
+    display:inline-block;
+    background: #c51e1e;
+    display: inline-block;
+    padding: 4px 17px;
+    color: red;
+}
+/*--====--end here contact--=====--*/
+
+/*--====--strat here footer--=====--*/
+.font-awesome ul li {
+    //display: inline-block;
+    margin-left: 20px;
+	}
+.font-awesome ul li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0px;
+}
+.footer-text p {
+    margin-top: 22px;
+	text-transform:uppercase;
+    font-family: initial;
+    font-weight: 600;
+}
+.font-awesome ul li a {
+    display: inline-block;
+    color:red;
+    margin-top: 10px;
+}
+.scrollup img {
+    position: fixed;
+    top: left;
+    left: 945px;
+    bottom: 127px;
+}
+.font-awesome ul li a {
+    text-decoration: none;
+}
+.font-awesome ul {
+	padding: -3px 0;
+}
+section.footer {
+    color: #fff;
+    background: #000;
+    //padding: 7px 0px 0px 0px;
+}
+.footer-text{
+	margin-right:auto !important;
+}
+.footer-text p {
+    //margin-top: 22px;
+	  color:red;
+}
+.font-awesome ul li a {
+    color:red;
+}
+/*--====--end here footer--=====--*/
+/*--====--scroll-to-top--====--*/
+.scrollup img {
+    width: 70px;
+    height: 60px;
+    font-size: 80px;
+    color: red;
+    //background: #404041;
+    bottom:100px;
+    right: 17px;
+    line-height: 49px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+}
+/*--====--scroll-to-top--====--*/
+
+/*--======--start here responsive--======--*/
+@media screen and (max-width:800px){
+.item h1{
+	font-size:40px;
+}
+.item h1 span{
+	font-size:40px;
+	}
+.about-right h1	{
+	font-size:23px;
+}
+.about-left h2 {
+    top: 242px;
+    left: 59px;
+}
+ul.nab {
+    top: 293px;
+    left: 26px;
+}
+
+}
+@media screen and (max-width:640px){
+.about-left h2 {
+    top: 665px;
+    left: 282px;
+}
+ul.nab {
+    top: 710px;
+    left: 260px;
+}
+
+}
+@media screen and (max-width:480px){
+.about-right h1 {
+    font-size: 15px;
+}
+.about-left h2 {
+    top: 506px;
+    left: 187px;
+}
+ul.nab {
+    top: 550px;
+    left: 180px;
+}
+.video-text h1 {
+    font-size: 34px;
+}
+}
+
+/*--======--end here responsive--======--*/
+
+
